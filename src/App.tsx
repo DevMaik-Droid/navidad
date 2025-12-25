@@ -191,9 +191,10 @@ const App = () => {
           justifyContent: "space-between",
           alignItems: "center",
           padding: "0px 15px",
+          flexWrap: "wrap",
         }}
       >
-        <p>by @DevMaik</p>
+        <p style={{ fontSize: "8px" }}>@DevMaik</p>
         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
           <input
             type="text"
@@ -205,7 +206,7 @@ const App = () => {
         </div>
       </div>
 
-            <h1
+      <h1
         style={{
           position: "fixed",
           top: 40,
@@ -215,8 +216,7 @@ const App = () => {
           zIndex: 10,
           fontSize: "25px", // más grande
           fontWeight: "bold",
-          fontFamily:
-            "'JetBrains Mono','Comic Sans MS', cursive, sans-serif",
+          fontFamily: "'JetBrains Mono','Comic Sans MS', cursive, sans-serif",
           textAlign: "center",
           color: "white",
           backgroundColor: "trasparent",
@@ -261,9 +261,6 @@ const App = () => {
       >
         FELIZ NAVIDAD
       </h1>
-
-
-
 
       <div style={{ height: "100vh" }}>
         <div
