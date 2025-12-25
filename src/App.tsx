@@ -209,7 +209,7 @@ const App = () => {
       <h1
         style={{
           position: "fixed",
-          top: 40,
+          top: 50,
           left: 0,
           width: "100%",
           height: "60px",
@@ -237,7 +237,7 @@ const App = () => {
         className="titulo"
         style={{
           position: "fixed",
-          top: 50,
+          top: 60,
           left: 0,
           width: "100%",
           height: "60px",
