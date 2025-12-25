@@ -23,7 +23,6 @@ const App = () => {
     setNuevoNombre("");
   };
 
-
   useEffect(() => {
     if (!audioRef.current) {
       // Crear audio solo una vez
@@ -48,9 +47,7 @@ const App = () => {
     };
   }, []);
 
-
   useEffect(() => {
-
     if (!mountRef.current) return;
 
     if (mountRef.current) {
@@ -187,14 +184,26 @@ const App = () => {
   /* ===== SCROLL PARA MOSTRAR EL ÁRBOL ===== */
   return (
     <>
-      <div style={{backgroundColor:"#021B14", display:"flex", justifyContent:"end", alignItems:"center"}}>
-        <input
-          type="text"
-          value={nuevoNombre}
-          onChange={(e) => setNuevoNombre(e.target.value)}
-          placeholder="Ingresa tu nombre"
-        />
-        <button onClick={handleAgregar}>Agregar</button>
+      <div
+        style={{
+          backgroundColor: "#021B14",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "0px 15px",
+          
+        }}
+      >
+        <p>by @DevMaik</p>
+        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <input
+            type="text"
+            value={nuevoNombre}
+            onChange={(e) => setNuevoNombre(e.target.value)}
+            placeholder="Ingresa tu nombre"
+          />
+          <button onClick={handleAgregar}>Agregar</button>
+        </div>
       </div>
 
       <h1
