@@ -191,7 +191,6 @@ const App = () => {
           justifyContent: "space-between",
           alignItems: "center",
           padding: "0px 15px",
-          
         }}
       >
         <p>by @DevMaik</p>
@@ -206,11 +205,39 @@ const App = () => {
         </div>
       </div>
 
+            <h1
+        style={{
+          position: "fixed",
+          top: 40,
+          left: 0,
+          width: "100%",
+          height: "60px",
+          zIndex: 10,
+          fontSize: "25px", // más grande
+          fontWeight: "bold",
+          fontFamily:
+            "'JetBrains Mono','Comic Sans MS', cursive, sans-serif",
+          textAlign: "center",
+          color: "white",
+          backgroundColor: "trasparent",
+          textShadow: `
+      0 0 10px #00ffff,
+      0 0 20px #ffffff,
+      0 0 30px #0000ff,
+      0 0 40px #ffffff,
+      0 0 50px #00ffff
+    `,
+          animation: "sistemas 2s infinite alternate", // animación de cambio de color
+        }}
+      >
+        ING. SISTEMAS - UPEA
+      </h1>
+
       <h1
         className="titulo"
         style={{
           position: "fixed",
-          top: 0,
+          top: 50,
           left: 0,
           width: "100%",
           height: "60px",
@@ -234,6 +261,10 @@ const App = () => {
       >
         FELIZ NAVIDAD
       </h1>
+
+
+
+
       <div style={{ height: "100vh" }}>
         <div
           ref={mountRef}
