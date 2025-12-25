@@ -127,7 +127,7 @@ const App = () => {
         const ctx = canvas.getContext("2d")!;
         ctx.fillStyle = "yellow"; // color amarillo
 
-        ctx.font = "28px JetBrains Mono";
+        ctx.font = "18px JetBrains Mono";
         ctx.textAlign = "center";
 
         ctx.fillText(nombre, 128, 40);
@@ -142,7 +142,7 @@ const App = () => {
         sprite.position.set(
           (Math.random() - 0.5) * 5, // x
           Math.random() * desiredHeight, // y
-          (Math.random() - 0.5) * 5 // z
+          (Math.random() - 0.5) * 7 // z
         );
 
         modelGroup.add(sprite); // añadir al grupo del árbol
