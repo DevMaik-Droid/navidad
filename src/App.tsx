@@ -209,7 +209,7 @@ const App = () => {
       <h1
         style={{
           position: "fixed",
-          top: 50,
+          top: 55,
           left: 0,
           width: "100%",
           height: "60px",
@@ -230,14 +230,14 @@ const App = () => {
           animation: "sistemas 2s infinite alternate", // animación de cambio de color
         }}
       >
-        ING. SISTEMAS - UPEA
+        ING. SISTEMAS
       </h1>
 
       <h1
         className="titulo"
         style={{
           position: "fixed",
-          top: 60,
+          top: 65,
           left: 0,
           width: "100%",
           height: "60px",
